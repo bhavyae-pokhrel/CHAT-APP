@@ -9,7 +9,7 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 const MONGO_URL="mongodb+srv://bhavyaeprasadpokhrel:12312312@cluster0.xxzpmqc.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0"
-const port=5000
+const port=8000
 const ORIGIN="http://localhost:3001"
 mongoose
   .connect(
