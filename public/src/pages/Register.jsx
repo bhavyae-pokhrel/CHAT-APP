@@ -25,7 +25,7 @@ export default function Register() {
 
   useEffect(() => {
     if (localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
-      navigate("/");
+      navigate("/chat");
     }
   }, []);
 
@@ -79,7 +79,7 @@ export default function Register() {
           process.env.REACT_APP_LOCALHOST_KEY,
           JSON.stringify(data.user)
         );
-        navigate("/");
+        navigate("/chat");
       }
     }
   };
@@ -118,7 +118,7 @@ export default function Register() {
           />
           <button type="submit">Create User</button>
           <span>
-            Already have an account ? <Link to="/login">Login.</Link>
+            Already have an account ? <Link to="/">Login.</Link>
           </span>
         </form>
       </FormContainer>

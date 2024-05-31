@@ -14,9 +14,9 @@ export default function App() {
     <Suspense fallback={<></>}>
       <Routes>
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/setAvatar" element={<SetAvatar />} />
-        <Route path="/" element={<Chat />} />
+        <Route path="/chat" element={<Chat />} />
       </Routes>
     </Suspense>
       
