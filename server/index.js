@@ -8,7 +8,7 @@ const socket = require("socket.io");
 require("dotenv").config();
 app.use(cors());
 app.use(express.json());
-const MONGO_URL="mongodb+srv://bhavyaeprasadpokhrel:12312312@cluster0.xxzpmqc.mongodb.net/test?retryWrites=true&w=majority&appName=Cluster0"
+const MONGO_URL="mongodb+srv://bhavyaeprasadpokhrel:chatapp123@cluster0.ceuczvt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 const port=8000
 const ORIGIN="http://localhost:3001"
 mongoose
