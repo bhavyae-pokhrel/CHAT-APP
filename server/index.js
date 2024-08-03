@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Start
 app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin","https://chat-hj2nasbkq-bhavyae-pokhrels-projects.vercel.app");
+  res.setHeader("Access-Control-Allow-Origin":"*","https://chat-hj2nasbkq-bhavyae-pokhrels-projects.vercel.app");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
