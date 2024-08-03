@@ -20,7 +20,6 @@ app.use((req,res,next)=>{
 })
 // End
 
-
 const MONGO_URL="mongodb+srv://bhavyaeprasadpokhrel:chatapp123@cluster0.ceuczvt.mongodb.net/chat"
 const port=8000
 //const ORIGIN="http://localhost:3001"
