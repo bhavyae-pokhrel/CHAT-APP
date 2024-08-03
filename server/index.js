@@ -10,14 +10,25 @@ app.use(cors());
 app.use(express.json());
 
 // Start
-app.use((req,res,next)=>{
-  res.setHeader("Access-Control-Allow-Origin":"*","https://chat-hj2nasbkq-bhavyae-pokhrels-projects.vercel.app");
+
+// app.use((req,res,next)=>{
+//   res.setHeader("Access-Control-Allow-Origin":"*","https://chat-hj2nasbkq-bhavyae-pokhrels-projects.vercel.app");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   next();
+// })
+
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
   );
   next();
-})
+});
+
 // End
 
 const MONGO_URL="mongodb+srv://bhavyaeprasadpokhrel:chatapp123@cluster0.ceuczvt.mongodb.net/chat"
